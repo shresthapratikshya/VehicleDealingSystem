@@ -5,16 +5,17 @@
  */
 package Controller;
 
-import Repository.CustomerVehicleOrdersRepo;
+import Repository.ChargeRepo;
 import java.sql.SQLException;
+import model.Charge;
 
 /**
  *
  * @author DELL
  */
-public class CustomerVehicleOrdersController {
+public class ChargeController {
     public void view() throws SQLException{
-        CustomerVehicleOrdersRepo Customer=new CustomerVehicleOrdersRepo();
-        Customer.view();
+        ChargeRepo Charge=new ChargeRepo();
+        Charge.view();
     }
 }
