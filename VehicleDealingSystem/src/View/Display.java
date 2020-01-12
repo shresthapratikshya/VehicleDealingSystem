@@ -6,7 +6,9 @@
 package View;
 
 import Controller.CategoryController;
+import Controller.ChargeController;
 import Controller.CustomerController;
+import Controller.CustomerVehicleOrdersController;
 import Controller.OrdersController;
 import Controller.OrdersTransactionsController;
 import Controller.SellersController;
@@ -18,6 +20,7 @@ import DaoImpl.SellersDaoImpl;
 import DaoImpl.TransactionsDaoImpl;
 import DaoImpl.VehiclesDaoImpl;
 import Repository.CustomerRepo;
+import dao.ChargeDao;
 import dao.CustomerDao;
 import dao.OrdersDao;
 import dao.SellersDao;
@@ -72,7 +75,17 @@ public class Display {
          System.out.println("c_id\torder_date\tt_amount\tt_date");
          ordersTransRepo.view();
      }
-
+     public void CustomerVehicleOrders() throws SQLException{
+         CustomerVehicleOrdersController customerVehicleOrdersRepo=new CustomerVehicleOrdersController();
+         System.out.println("id\tc_username\tv_name");
+         customerVehicleOrdersRepo.view();
+     }
+     
+     public void Charge() throws SQLException{
+         ChargeController chargeRepo=new ChargeController();
+         System.out.println("id\tv_name\tv_model\tmYear\tv_engNo\tmileage\tv_color\tv_cost\tcategory_price");
+         chargeRepo.view();
+     }
      public int askID(){
          Scanner s=new Scanner(System.in);
          System.out.println("Enter the ID you want to update:");
@@ -96,6 +109,7 @@ public class Display {
          SellersDao thisSellers=new SellersDaoImpl();
          OrdersDao thisOrders=new OrdersDaoImpl();
          TransactionsDao thisTrans=new TransactionsDaoImpl();
+         
          boolean flag=true;
          int id,index;
          SellersDao sell=new SellersDaoImpl();
@@ -201,7 +215,7 @@ public class Display {
                     while(true){
                     System.out.println("LIST OF TABLES:\n1.Customer\n2.Sellers\n3.Category\n"
                     + "4.Orders\n5.Vehicles\n"
-                    + "6.Transaction\n7.OrdersTransactions\n8.Exit");
+                    + "6.Transaction\n7.OrdersTransactions\n8.CustomerVehicleOrders\n9.Charge\n10.Exit");
                     System.out.println("Enter number from 1-8:");
                     int choice=i.nextInt();
                     switch(choice){
@@ -227,6 +241,12 @@ public class Display {
                             d.OrdersTransactions();
                             break;
                         case 8:
+                            d.CustomerVehicleOrders();
+                            break;
+                        case 9:
+                            d.Charge();
+                            break;
+                        case 10:
                             System.exit(0);
                         default:
                             System.out.println("Sorry!Consider chosing from 1-8");
