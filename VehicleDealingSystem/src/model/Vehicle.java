@@ -18,13 +18,13 @@ public class Vehicle {
     private int modelYear;
     private String v_color;
     private int v_cost;
-    private int v_engineNo;
+    private String v_engineNo;
     private double mileage;
     private String status;
     static int generateId = 0;
 
     public Vehicle(int category_id,int s_id, String v_name,String v_model, 
-            int modelYear, String v_color, int v_cost, int v_engineNo,double mileage,
+            int modelYear, String v_color, int v_cost, String v_engineNo,double mileage,
             String status) {
         id=generateId++;
         this.category_id=category_id;
@@ -103,11 +103,11 @@ public class Vehicle {
         this.v_cost = v_cost;
     }
 
-    public int getV_engineNo() {
+    public String getV_engineNo() {
         return v_engineNo;
     }
 
-    public void setV_engineNo(int v_engineNo) {
+    public void setV_engineNo(String v_engineNo) {
         this.v_engineNo = v_engineNo;
     }
 

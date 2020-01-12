@@ -12,15 +12,15 @@ package model;
 public class Sellers {
     private int id;
     private String s_username;
-    private String s_email;
-    private int s_mobile;
+    private String s_mobile;
+    private String email;
     private String s_address;
    
 
-    public Sellers(int id,String s_username, String s_email, int s_mobile, String s_address) {
+    public Sellers(int id,String s_username,String email,String s_mobile, String s_address) {
         this.id=id;
         this.s_username = s_username;
-        this.s_email = s_email;
+        this.email=email;
         this.s_mobile = s_mobile;
         this.s_address = s_address;
     }
@@ -41,19 +41,11 @@ public class Sellers {
         this.s_username = s_username;
     }
 
-    public String getS_email() {
-        return s_email;
-    }
-
-    public void setS_email(String s_email) {
-        this.s_email = s_email;
-    }
-
-    public int getS_mobile() {
+    public String getS_mobile() {
         return s_mobile;
     }
 
-    public void setS_mobile(int s_mobile) {
+    public void setS_mobile(String s_mobile) {
         this.s_mobile = s_mobile;
     }
 
@@ -63,6 +55,14 @@ public class Sellers {
 
     public void setS_address(String s_address) {
         this.s_address = s_address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
     
     

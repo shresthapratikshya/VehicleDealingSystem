@@ -18,7 +18,7 @@ public interface OrdersDao {
     ArrayList<Orders> getAllOrder();
     void fetchOrderDatabase() throws SQLException;
     Orders getOrder(int order_id);
-    void addOrder(int c_id,int vehicle_id,int status_id,Date order_date) throws SQLException;
-    void updateOrder(int order_id,int c_id,int vehicle_id,int status_id,Date order_date);
+    void addOrder(String order_date,int c_id,int vehicle_id) throws SQLException;
+    void updateOrder(int order_id,String order_date,int c_id,int vehicle_id);
     void deleteOrder(int order_id);
 }

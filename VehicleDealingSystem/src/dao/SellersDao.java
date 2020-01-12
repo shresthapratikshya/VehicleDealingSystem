@@ -13,14 +13,14 @@ import model.Sellers;
  *
  * @author DELL
  */
-public interface SalesmanDao {
+public interface SellersDao {
     ArrayList<Sellers> getallSalesman();
     void fetchSalesmanDatabase() throws SQLException;
-    Sellers getSalesman(int s_id);
-    void addSalesman(String s_username,String s_email,
-            int s_mobile,String address);
-    void updateSalesman(int s_id,String s_username,String s_email,
-            int s_mobile,String address);
-    void deleteSalesman(int s_id);
+    Sellers getSalesman(int id);
+    void addSalesman(int id,String s_username,String email,
+            String s_mobile,String address);
+    void updateSalesman(int id,String s_username,String email,
+            String s_mobile,String address);
+    void deleteSalesman(int id);
     
 }

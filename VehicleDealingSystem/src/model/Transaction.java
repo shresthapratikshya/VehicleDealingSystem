@@ -14,15 +14,17 @@ import java.util.Date;
 public class Transaction {
     private int id;
     private int order_id;
-    private Date transaction_date;
+    private String transaction_date;
     private int transaction_amount;
+    private String status;
     static int generateId=0;
 
-    public Transaction(int order_id,Date transaction_date, int transaction_amount) {
+    public Transaction(int order_id,String transaction_date, int transaction_amount,String status) {
         id=generateId++;
         this.order_id=order_id;
         this.transaction_date = transaction_date;
         this.transaction_amount = transaction_amount;
+        this.status=status;
     }
 
     public int getOrder_id() {
@@ -41,11 +43,11 @@ public class Transaction {
         this.id =id;
     }
 
-    public Date getTransaction_date() {
+    public String getTransaction_date() {
         return transaction_date;
     }
 
-    public void setTransaction_date(Date transaction_date) {
+    public void setTransaction_date(String transaction_date) {
         this.transaction_date = transaction_date;
     }
 
@@ -55,6 +57,14 @@ public class Transaction {
 
     public void setTransaction_amount(int transaction_amount) {
         this.transaction_amount = transaction_amount;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     
     

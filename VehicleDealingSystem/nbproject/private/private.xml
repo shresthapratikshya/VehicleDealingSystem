@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/Repository/CustomerRepo.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/Controller/CustomerController.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/DBConnector/DBConnection.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/model/Sellers.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/model/Orders.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/Repository/SellersRepo.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/Repository/VehicleRepo.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/DaoImpl/OrdersDaoImpl.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/DaoImpl/SellersDaoImpl.java</file>
             <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/View/Display.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/DaoImpl/VehiclesDaoImpl.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/dao/OrdersDao.java</file>
+            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/VehicleDealingSystem/src/dao/SellersDao.java</file>
         </group>
     </open-files>
 </project-private>

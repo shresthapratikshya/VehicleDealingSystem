@@ -13,11 +13,11 @@ public class Customer {
     private int id;
     private String c_username;
     private String c_email;
-    private int c_mobile;
+    private String c_mobile;
     private String c_address;
     static int generateId = 0;
 
-    public Customer(String c_username, String email, int c_mobile, String c_address) {
+    public Customer(String c_username, String email, String c_mobile, String c_address) {
         id=generateId++;
         this.c_username = c_username;
         this.c_email = email;
@@ -49,11 +49,11 @@ public class Customer {
         this.c_email = email;
     }
 
-    public int getC_mobile() {
+    public String getC_mobile() {
         return c_mobile;
     }
 
-    public void setC_mobile(int c_mobile) {
+    public void setC_mobile(String c_mobile) {
         this.c_mobile = c_mobile;
     }
 

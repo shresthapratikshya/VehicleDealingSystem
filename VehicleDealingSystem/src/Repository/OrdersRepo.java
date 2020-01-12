@@ -26,7 +26,7 @@ public class OrdersRepo {
         ResultSet resultSet=statement.executeQuery("select * from Orders");
         
         while(resultSet.next()){
-            System.out.println(resultSet.getInt(1)+"\t"+resultSet.getDate(2)+"\t"
+            System.out.println(resultSet.getInt(1)+"\t"+resultSet.getString(2)+"\t"
             +resultSet.getInt(3)+"\t"+resultSet.getInt(4));
         }
         DBConnection.closeConnection();

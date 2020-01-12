@@ -26,8 +26,8 @@ public class TransactionsRepo {
         ResultSet resultSet=statement.executeQuery("select * from Transaction");
         
         while(resultSet.next()){
-            System.out.println(resultSet.getInt(1)+"\t"+resultSet.getDate(2)+"\t"
-            +resultSet.getInt(3)+"\t"+resultSet.getInt(4));
+            System.out.println(resultSet.getInt(1)+"\t"+resultSet.getString(2)+"\t"
+            +resultSet.getInt(3)+"\t"+resultSet.getInt(4)+"\t"+resultSet.getString(5));
         }
         DBConnection.closeConnection();
     }
